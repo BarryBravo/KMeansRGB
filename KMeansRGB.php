@@ -104,7 +104,7 @@ class KMeansRGB
     }
 
     /**
-     * 初始化待计算的RGB总像素点
+     * 初始化RGB像素点群
      *
      * @param $image 图片路径或URL
      */
