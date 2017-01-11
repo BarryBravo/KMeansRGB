@@ -110,19 +110,19 @@ class KMeansRGB
      */
     protected function generationRGBPoints($image)
     {
-            $imagick = new Imagick($image);
-            $width = $imagick->getImageWidth();
-            $height = $imagick->getImageHeight();
-            if ($width > $this->maxImageSize || $height > $this->maxImageSize) {
+        $imagick = new Imagick($image);
+        $width = $imagick->getImageWidth();
+        $height = $imagick->getImageHeight();
+        if ($width > $this->maxImageSize || $height > $this->maxImageSize) {
             $ratio = $width / $height;
-        if (1 > $ratio) {
-            $thumbHeight = $this->maxImageSize;
-            $thumbWidth = floor($thumbHeight * $ratio);
-        } else {
-            $thumbWidth = $this->maxImageSize;
-            $thumbHeight = floor($thumbWidth / $ratio);
-        }
-        $imagick->thumbnailImage($thumbWidth, $thumbHeight);
+            if (1 > $ratio) {
+                $thumbHeight = $this->maxImageSize;
+                $thumbWidth = floor($thumbHeight * $ratio);
+            } else {
+                $thumbWidth = $this->maxImageSize;
+                $thumbHeight = floor($thumbWidth / $ratio);
+            }
+            $imagick->thumbnailImage($thumbWidth, $thumbHeight);
         }
         $it = $imagick->getPixelIterator();
         $it->resetIterator();
