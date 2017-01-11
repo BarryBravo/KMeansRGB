@@ -1,10 +1,13 @@
 {
     "name": "thinfer/kmeansrgb",
     "description": "A kmeans++ clustering algorithm for colors in R'G'B'",
+    "version": "1.0.0",
+    "keywords": ["kmeans", "color", "rgb"],
     "authors": [
         {
             "name": "Barry Shieh",
-            "email": "seeyagain173@gmail.com"
+            "email": "seeyagain173@gmail.com",
+            "homepage": "https://github.com/BarryShieh"
         }
     ],
     "require": {
