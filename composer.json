@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Thinfer\\KMeansRGB\\": "src/Thinfer"
+            "Thinfer\\KMeansRGB\\": "src/"
         }
     }
 }
