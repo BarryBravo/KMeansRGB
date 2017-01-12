@@ -2,8 +2,6 @@
 
 namespace Thinfer;
 
-use Imagick;
-
 /**
  * 利用K-Means算法提取图片主题色
  *
@@ -115,9 +113,9 @@ class KMeansRGB
     protected function generationRGBPoints($image)
     {
         if (! extension_loaded('imagick')) {
-            throw new Exception('未安装Imagick扩展');
+            throw new \Exception('未安装Imagick扩展');
         }
-        $imagick = new Imagick($image);
+        $imagick = new \Imagick($image);
         $width = $imagick->getImageWidth();
         $height = $imagick->getImageHeight();
         if ($width > $this->maxImageSize || $height > $this->maxImageSize) {
