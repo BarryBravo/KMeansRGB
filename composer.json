@@ -1,7 +1,6 @@
 {
     "name": "thinfer/kmeansrgb",
     "description": "A kmeans++ clustering algorithm for colors in R'G'B'",
-    "version": "1.0.0",
     "keywords": ["kmeans", "color", "rgb"],
     "authors": [
         {
@@ -10,7 +9,7 @@
             "homepage": "https://github.com/BarryShieh"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "master",
     "require": {
         "php": ">=5.3.0"
     },
