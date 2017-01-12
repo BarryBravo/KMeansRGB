@@ -9,7 +9,6 @@
             "homepage": "https://github.com/BarryShieh"
         }
     ],
-    "minimum-stability": "v1.0.2",
     "require": {
         "php": ">=5.3.0"
     },
